@@ -5,19 +5,19 @@ data in a node, print the node.*/
 #include <stdlib.h>
 
 struct Node{
-    int data;
-    struct Node *next;
+    int info;
+    struct Node *link;
 };
 
 int main(){
     struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
 
-    printf("Enter data: ");
-    scanf("%d", &newNode->data);
+    printf("Enter info: ");
+    scanf("%d", &newNode->info);
 
-    newNode->next = NULL;
+    newNode->link = NULL;
 
-    printf("Data in the node: %d\n", newNode->data);
+    printf("Data in the node: %d\n", newNode->info);
 
     free(newNode);
 
